@@ -5,6 +5,10 @@ spring:
   application:
     name: HYSTRIX-DASHBOARD
 
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
+
 eureka:
   client:
     register-with-eureka: true
