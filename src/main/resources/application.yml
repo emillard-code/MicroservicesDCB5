@@ -4,3 +4,12 @@ server:
 spring:
   application:
     name: HYSTRIX-DASHBOARD
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9003/eureka/
+  instance:
+    hostname: localhost
